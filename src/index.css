@@ -1,0 +1,124 @@
+
+@import "tailwindcss";
+
+@theme{
+    --color-primary: #030014;
+
+    --color-light-100: #cecefb;
+    --color-search-100: #0c0eff;
+    --color-light-200: #a8b5db;
+  
+    --color-gray-100: #9ca4ab;
+  
+    --color-dark-100: #063c46;
+  
+    --font-dm-sans: DM Sans, sans-serif;
+  
+    --breakpoint-xs: 480px;
+    --background-image-hero-pattern: url("/hero-bg.png");
+}
+@layer base{
+    body{
+        background: #030014;
+    }
+    h1 {
+        @apply mx-auto max-w-4xl text-center text-5xl font-bold leading-tight tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
+      }
+    
+      h2 {
+        @apply text-2xl font-bold text-white sm:text-2xl ;
+      }
+    
+      main {
+        @apply min-h-screen relative bg-primary;
+      }
+    
+      img {
+        @apply w-full max-w-md h-auto object-contain mx-auto drop-shadow-md;
+      }
+}
+
+@utility container{
+    margin-inline: auto;
+    padding-inline:2rem;
+}
+
+@layer components {
+    .pattern {
+      @apply bg-hero-pattern w-full h-screen bg-center bg-cover fixed z-0;
+      opacity: 0.2;
+    }
+    .wrapper {
+        @apply px-5 py-12 xs:p-10 max-w-7xl mx-auto flex flex-col relative z-10;
+      }
+    
+    .search {
+        @apply w-full bg-light-100/10 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
+    
+        & div {
+          @apply relative flex items-center;
+        }
+    
+        & Search {
+          @apply absolute left-2 h-5 w-5;
+        }
+    
+        & input {
+          @apply w-full bg-transparent py-2 sm:pr-10 pl-10 text-base text-gray-200 placeholder-light-200 outline-hidden;
+        }
+      }
+
+      .all-movies {
+        @apply space-y-9;
+    
+        & ul {
+          @apply grid grid-cols-1 gap-5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+        }
+      }
+      .movie-card {
+        @apply bg-dark-100/90 p-5 rounded-xl shadow-inner shadow-light-100/10;
+    
+        & img {
+          @apply rounded-lg h-auto w-full;
+        }
+    
+        & h3 {
+          @apply text-white font-bold text-base line-clamp-1;
+        }
+    
+        & .content {
+          @apply mt-2 flex flex-row items-center flex-wrap gap-2;
+        }
+    
+        & .rating {
+          @apply flex flex-row items-center gap-1;
+        }
+    
+        & .rating img {
+          @apply size-4 object-contain;
+        }
+    
+        & .rating p {
+          @apply font-bold text-base text-white;
+        }
+    
+        & .content span {
+          @apply text-sm text-gray-100;
+        }
+    
+        & .content .lang {
+          @apply capitalize text-gray-100 font-medium text-base;
+        }
+    
+        & .content .year {
+          @apply text-gray-100 font-medium text-base;
+        }
+      }
+    
+
+
+}  
+
+@utility text-gradient{
+    @apply bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent;
+}
