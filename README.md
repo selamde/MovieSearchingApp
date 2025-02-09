@@ -34,7 +34,7 @@ A movie searching web application that allows users to browse and search for mov
 
 > npm install
 
-4. Get your TMDB API key from TMDB and create .env.local file paste your api key in VITE_TMDB_API_KEY : 
+4. Get your TMDB API key from TMDB and create .env.local file and paste your api key in VITE_TMDB_API_KEY : 
    Get your api from https://developer.themoviedb.org/reference/intro/getting-started
 
 > VITE_TMDB_API_KEY = your_api_key_here
