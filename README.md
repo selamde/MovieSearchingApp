@@ -53,9 +53,8 @@ npm start
 
 ## App looks like this
 
-- Desktop view
+- Desktop view and Mobile view
 ![Reference Image](public/image2.png)
 ![Reference Image](public/image1.png)
-- Mobile view
 ![Reference Image](public/image3.png)
 
