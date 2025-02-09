@@ -1,5 +1,5 @@
 # Movie Searching App
-Hi 👋, My name is Selamsew Dagne i am React and PHP developer, good at Mern Stack development.
+Hi 👋, My name is Selamsew Dagne i am a React and PHP developer, good at Mern Stack development.
 ## Overview
 
 A movie searching web application that allows users to browse and search for movies using the TMDB API. Built with React and styled using Tailwind CSS, this app provides an intuitive and seamless experience for movie enthusiasts.
