@@ -56,7 +56,6 @@ npm start
 - Desktop view
 ![Reference Image](public/image2.png)
 ![Reference Image](public/image1.png)
-
 - Mobile view
 ![Reference Image](public/image3.png)
 
